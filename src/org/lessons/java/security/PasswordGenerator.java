@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class PasswordGenerator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Inserisci il tuo nome e premi invio...");
-        String Name = input.nextLine();
-        System.out.println("Il tuo nome é: " + Name);
+        System.out.println("Inserisci il tuo Nome e premi invio...");
+        String FirstName = input.nextLine();
+        System.out.println("Inserisci il tuo Cognome e premi invio...");
+        String LastName = input.nextLine();
+        System.out.println("Inserisci il tuo colore preferito e premi invio...");
+        String Color = input.nextLine();
+        System.out.println("Sei " + FirstName +" "+ LastName +" e il tuo colore preferito è " + Color);
 
         input.close();
     }
