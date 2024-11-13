@@ -12,6 +12,13 @@ public class PasswordGenerator {
         System.out.println("Inserisci il tuo colore preferito e premi invio...");
         String Color = input.nextLine();
         System.out.println("Sei " + FirstName +" "+ LastName +" e il tuo colore preferito è " + Color);
+        
+        System.out.println("Inserisci la tua data di nascita in formato (dd/mm/yyyy) e premi invio...");
+        String[] Birth = input.nextLine().split("/");
+        int Day = Integer.parseInt(Birth[0]);
+        int Month = Integer.parseInt(Birth[1]);
+        int Year = Integer.parseInt(Birth[2]);
+        System.out.println("Sei nato/a il giorno " + Day +" del mese " + Month + " nell'anno " + Year);
 
         input.close();
     }
